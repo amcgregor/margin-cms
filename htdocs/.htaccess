@@ -1,0 +1,40 @@
+# We like security.  Turn off directory listings for the entire site.
+Options -Indexes
+
+# We use the RewriteEngine to handle "virtual" subdomains, amongst other goodies.
+RewriteEngine On
+
+# Keep them on the right track - www is the way for root domains...
+#RewriteCond %{HTTP_HOST} ^marginsoftware\.com
+#RewriteRule ^(.*)$ http://www.marginsoftware.com/$1 [R=permanent,L]
+
+# Keep them on the right track - www is NOT the way for subdomains...
+#RewriteCond %{HTTP_HOST} ^(www\.)([^.]+)\.marginsoftware\.com
+#RewriteRule ^(.*)$ http://%2.marginsoftware.com/$1 [R=permanent,L]
+
+# Our template system uses 404 redirection to achieve its devious goals.
+ErrorDocument 404 /index.php
+
+# Add a few PHP options to the mix.
+php_value include_path .:/path/to/includes:/path/to/classes
+
+# Add missing mime-types.
+AddType application/octet-stream .chm .bz2 .tgz
+AddType application/x-pilot .prc .pdb
+
+# Specify the base path for the site.  (Without trailing slash.)
+SetEnv MCMS_BASEPATH "/path/to"
+
+# Disable mod_speling, as this breaks URL shortcuts.
+<IfModule mod_speling.c>
+  CheckSpelling Off
+</IfModule>
+
+# Force the following files to be PHP scripts.  (And pseudo-directories.)
+<Files products>
+  ForceType application/x-httpd-php
+</Files>
+
+<Files details>
+  ForceType application/x-httpd-php
+</Files>

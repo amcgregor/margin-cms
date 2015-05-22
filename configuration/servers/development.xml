@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Server name="home" title="Alice's Personal Server">
+  <Location>
+    <Address></Address>
+    <City></City>
+    <Region></Region>
+    <Country></Country>
+  </Location>
+
+  <Contacts>
+    <Contact type="primary">
+      <name></name>
+      <company></company>
+      <title></title>
+      <mobile></mobile>
+      <email></email>
+      <website></website>
+    </Contact>
+    <Contact type="billing" sameas="primary" />
+    <Contact type="technical" sameas="primary" />
+  </Contacts>
+
+  <Database type="mysql">
+    <Host>localhost</Host>
+    <User>mcms</User>
+    <Password></Password>
+    <DB>margin</DB>
+  </Database>
+  
+  <Mail />
+</Server>

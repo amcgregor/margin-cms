@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Document id="products" title="Category Display" version="1.0-pre2">
+  <Meta name="description">Margin Software creates custom solutions for users of every experience level.  Specializing in PHP development, we can create the web-based solution for you.</Meta>
+  <Meta name="keywords">margin software, php, xml, palmos, windows, development, c, c++, tablet, linux, gentoo</Meta>
+
+  <Authors>
+    <Author name="Alice" contact="alice@" role="Site Administrator" />
+  </Authors>
+
+  <Content>
+    <Title level="1" class="bc" id="title"><![CDATA[Browsing Products by Category]]></Title>
+    <Breadcrumb id="crumb" />
+    <ProductListing id="listing" type="short" />
+  </Content>
+</Document>

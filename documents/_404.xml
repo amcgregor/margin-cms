@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Document name="_404" title="Template Not Found" version="1.1">
+  <Meta name="description"></Meta>
+  <Meta name="keywords"></Meta>
+
+  <Authors>
+    <Author name="Alice" contact="alice@" role="Site Administrator" />
+  </Authors>
+
+  <Content>
+    <Title level="1" id="error"><![CDATA[I'm sorry, Dave.  I can't do that.]]></Title>
+    <Text title="The document you requested could not be found." image="/images/objects/manual.png"><![CDATA[
+<p>Either the programmer fouled up, the designer fouled up, or you typed something a little off into your browser...</p>
+<p>Please check your spelling and try again, or siply remove the last item or two from your URL.  If all else fails you can return to the font page by clicking the title.</p>
+<p>If this problem persists (for example, if you clicked a link on <i>our</i> site to get here) then you should proabably <a href="mailto:webmaster@marginsooftware.com">contact the webmaster</a>.
+<div style="padding-bottom: 1ex;">
+  <div style="font-size: x-large; font-style: italic; text-align: center;">
+    Once upon a midnight dreary, while I websurfed, weak and weary,<br />
+    Over many a strange and spurious website of 'hot chicks galore',<br />
+    While I clicked my fav'rite bookmark, suddenly there came a warning,<br />
+    And my heart was filled with mourning, mourning for my dear amour.<br />
+    &ldquo;'Tis not possible,&rdquo; I muttered, &ldquo;give me back my cheap hardcore!&rdquo; &mdash;
+  </div>
+  <div style="font-size: x-large; font-style: italic; text-align: right;">
+    Quoth the server, <span style="font-size: larger; font-weight: bold; color: red; ">&ldquo;404&rdquo;</span>.
+  </div>
+</div>
+    ]]></Text>
+  </Content>
+</Document>

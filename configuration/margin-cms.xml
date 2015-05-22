@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Configuration>
+  <General>
+    <CompressOutput>Yes</CompressOutput>
+    <TidyOutput>No</TidyOutput>
+    <TidyConfig>/configuration/standard.tcfg</TidyConfig>
+    <PageTimeout>60</PageTimeout>
+    <UseSessions>No</UseSessions>
+  </General>
+</Configuration>

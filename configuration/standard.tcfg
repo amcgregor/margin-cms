@@ -1,0 +1,11 @@
+output-xhtml: yes
+doctype: strict
+tidy-mark: yes
+clean: yes
+enclose-block-text: yes
+logical-emphasis: yes
+char-encoding: raw
+wrap: 0
+indent: auto
+indent-spaces: 2
+indent-attributes: no

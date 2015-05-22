@@ -1,0 +1,33 @@
+<?
+//
+// Margin-CMS Custom Form Processor 1.0-pre2
+// Copyright (c) 2004-2005, Alice Bevan-McGregor.
+// All Rights Reserved.
+//
+// This version of Margin-CMS requires PHP 5 and above.
+//
+
+// Use Google-friendly paths instead of GET variables to identify categories
+// and products.  This is the first reason we need a seperate PHP file.
+$_GLOBALS['productPath'] = explode("/", trim("0" . $_SERVER['PATH_INFO'], " /"));
+
+// Specify which XML document to use to render this page.
+// This is required to support form processing, amongst other things.
+$pageSourceFileName = "/products.xml";
+
+// Peform the same loading tasks as the main processor...
+require("cms-global.php");
+require("cms-page.php");
+require("cms-site.php");
+require("cms-database.php");
+
+require("class.DB.php");
+require("class.Configuration.php");
+require("class.i18n.php");
+
+$_GLOBALS['Configuration'] = new Configuration();
+$_GLOBALS['i18n'] = new Translation($_GLOBALS['Configuration']['system.language.base'], $_GLOBALS['Configuration']['system.language.default']);
+
+require("cms-page-render.php");
+
+?>

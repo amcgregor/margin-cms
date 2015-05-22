@@ -1,0 +1,116 @@
+/* Margin Software, NECTI. CSS Layout */
+/* Copyright (c) 2005, Margin Software.  All Rights Reserved. */
+
+/* HTML Objects */
+
+body                                        { margin: 0px; padding: 0px; min-width: 760px; font-family: 'Trebuchet MS', Verdana, sans-serif; color: black; background: white; }
+a                                           { text-decoration: none; }
+      
+p                                           { margin: 0px 0px 1ex 0px; padding: 0px; }
+tt                                          { font-size: smaller; }
+h1, h2, h3, h4, h5, h6                      { margin: 0px; margin-top: 1ex; padding: 0px; font-family: "Trebuchet MS", Verdana, sans-serif; font-weight: normal; line-height: 120%; border-bottom: 1px solid #ccc; }
+h1                                          { font-size: 150%; color: rgb(45, 76, 121); margin: 0px; }
+h2                                          { font-size: 130%; }
+h3                                          { font-size: 100%; }
+h4                                          { font-size: 100%; }
+
+h2 :link                                    { color: #000; text-decoration: none; }
+h2 :visited                                 { color: #000; }
+h2 :link:hover, :visited:hover              { color: #039; text-decoration: none; }
+h2 :link:active, :link:active               { color: #039; text-decoration: none; }
+
+ul, ol                                      { margin: 0px; }
+li                                          { margin-bottom: 0.5ex; }
+pre                                         { display: block; padding: 1%; overflow: auto; background-color: #efefef; border: solid #666; border-width: 1px 0px; font-family: 'Lucida Console', "Bitstream Vera Sans Mono", monaco, "Courier New", courier, monospace; font-weight: normal; line-height: 100%; margin: 1ex -1ex; }
+* html code                                 { font-size : 105%; }
+
+/* Link Objects */
+
+a                                           { color: #039; text-decoration: none; }
+a:visited                                   { color: #636; text-decoration: none; }
+a:hover, a:visited:hover                    { color: #666; text-decoration: underline; }
+a:active, a:active                          { color: #000; }
+
+
+/* Document Container */
+
+#wrapper                                    { background: transparent url(/images/background.png) repeat-y; width: 760px; position: relative; left: 50%; margin-left: -380px; }
+#container                                  { background: transparent url(/images/background-bottom.png) bottom left no-repeat; padding-bottom: 20px; }
+
+
+/* Header Object */
+
+#header                                     { background: #036 url(/images/header.jpeg) bottom right no-repeat; color: white; padding: 1em; margin: 0px 20px; }
+#header h1, #header h2                      { border: 0px; margin: 0px; padding: 0px; }
+#header h1                                  { font-size: x-large; }
+#header h1 a                                { color: white; }
+#header h1 a:hover                          { color: #abd; text-decoration: none; }
+#header h2                                  { font-size: small; font-weight: normal; }
+#header ul                                  { display: none; }
+      
+
+/* Content Object */
+
+#content                                    { margin: 0px 20px; padding: 1ex; }
+
+#crumb                                      { font-size: smaller; }
+#crumb ol                                   { list-style: none; margin: 0px; padding: 0px; }
+#crumb li                                   { margin: 0px 1ex 0px 0px; padding: 0px 1ex; display: inline; border-left: 1px solid #ccc; }
+#newstitle                                  { margin-bottom: 0px; }
+#newsdate                                   { margin-bottom: 1ex; }
+
+#floater                                    { width: 300px; float: right; margin-top: 0px; border: 1em solid white; border-width: 0px 0px 1em 1em; background: white; }
+#floater h2                                 { margin: 0px; }
+#floater ul, #floater ol                    { margin-top: 1ex; padding-left: 2em; }
+
+.instructions                               { padding-left: 1em; }
+
+
+/* Image Types */
+
+a img                                       { border: none; }
+img.rss                                     { float: right; margin: 0; padding: 4px 4px 0 0; }
+img.promo                                   { margin: -1.5em 0 8px 8px; float: right; z-index: 75; }
+
+
+/* Column Objects */
+
+.twocol                                     { width: 48%; float: left; padding-right: 2%; }
+.twocol-last                                { width: 50%; float: left; }
+.twocol ul, .twocol-last ul                 { margin: 0.5em 0 0 0; padding: 0; padding-left: 2em; }
+.twocol li, .twocol-last li                 { margin: 0 0 0.5ex 0; padding: 0; }
+
+
+/* News List Object */
+
+ul.news                                     { margin: 0.5em 0 0 0; padding: 0; }
+
+ul.news li                                  { margin: 0 0 0.7em 0; padding: 0; clear: left; list-style-type: none; }
+ul.news li :link                            { font-weight: normal; }
+ul.news div.date                            { float: left; text-align: left; margin: 0 5px 5px 0; line-height: 1.1em; padding: 1px 0px; width: 3.5em; white-space: nowrap; color: #666; }
+
+
+/* Content Management System Messages */
+
+.cmsError                                   { clear: both; background: rgb(224, 234, 255) url(/images/iconography/important.png) center right no-repeat; margin: 1em 0px; padding: 1ex; font-size: smaller; border: 1px solid black; border-width: 1px 0px; }
+
+
+.product { border-bottom: 1px solid #ccc; clear: both; padding-left: 64px; }
+.product img { width: 32px; height: 32px; float: left; margin: 0.5ex 1ex; margin-left: -64px; }
+.productactions { float: right; }
+.productprice { float: right; margin: 0px 1em; }
+.productcode { float: left; margin-right: 1ex; }
+.productname {  }
+.description {  }
+
+
+/* Footer Object */
+
+#footer                                     { margin: 0px 20px; padding: 1ex; text-align: center; font-size: xx-small; font-family: verdana, arial, helvetica; background: rgb(74, 104, 148); color: white; clear: both; }
+#footer :link                               { color: white; }
+#footer :visited                            { color: white; }
+#footer :visited                            { color: white; }
+#footer :link:hover, :visited:hover         { color: white; text-decoration: underline; }
+#footer :link:active, :link:active          { color: white; text-decoration: underline; }
+#footer #timing                             { float: left; }
+#footer #generator                          { text-align: right; }
